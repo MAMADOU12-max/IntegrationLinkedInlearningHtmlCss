@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@1&family=Raleway&display=swap'); 
+/* font-family: 'Raleway', sans-serif; */
+/* **********************************SHARE ELEMENT*************************/
+:root {
+    --red :#C12720;
+    --black: #333333;
+    --shaded-red: #DF9595;
+    --green: #00751F;
+    --white: #FFFFFF;
+    --twhite: rgba(255,255,255,0.8);
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem; 
+}
+#mainHeader, #mainFooter{
+    background-color: var(--red);
+    position: fixed;
+    width: 100%;
+}
+#mainHeader{
+    height: 40px;
+    display: grid;
+    grid-template-columns: 80px 1fr 40px;
+    top: 0;
+}
+#mainHeader #logo{
+    width: 80px;
+    padding: 5px;
+    z-index: 1000;
+}
+#mainHeader > h3 {
+    color: var(--white);
+    font-size: 1em;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 40px;
+}
+#mainHeader #mainNav{
+    position: absolute;
+    background-color: var(--red);
+    width: 100%;
+    top: 40px;
+    padding-bottom: 10px;
+    display: none;
+}
+#mainHeader #mainNav ul{
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#mainHeader #mainNav ul li a{
+    text-decoration: none;
+    color: var(--white);
+    padding-left: 90px;
+    font-size: 1.4em;
+    display: block;
+    font-family: 'Cantarell', Verdana, Geneva, Tahoma, sans-serif;
+}
+#mainHeader #mainNav ul li a:hover{
+    color: var(--shaded-red) ;
+}
+#mainHeader #menuToggle{
+    height: 40px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+#pageContent{
+    background: url(/images/image-1.jpg) center center / cover no-repeat fixed;
+    min-height: 100vh;
+    padding: 100px 20px;
+}
+h1{
+    color: var(--red);
+    font-size: 1.8em;
+    letter-spacing: .1em;
+}
+main{
+    background: var(--white);
+    /* margin: 50px 30px; */
+    padding: 20px;
+}
+#pageContent.backShare main ul{
+    list-style-type: none;
+    display: grid;
+    grid-gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+#pageContent.backShare main ul li{
+    text-decoration: none;
+    justify-content: center;
+    padding: 10px;
+
+}
+#pageContent.backShare main ul li:hover{
+    background-color: var(--shaded-red);
+
+}
+#pageContent.backShare main ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--black);
+}
+img{
+    width: 100%;
+}
+#mainFooter{
+    height: 40px;
+    color: var(--white);
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+/* ************Categorie************ */
+#pageContent.blog{
+    display: grid;
+    grid-gap: 20px;
+}
+#rightCol{
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    
+}
+#rightCol h2{
+    color: var(--white) ;
+}
+#rightCol input{
+    border-radius: 50px;
+}
+#rightCol section{
+    border-bottom: solid 1px var(--white);
+    padding-bottom: 20px;
+}
+#rightCol section > div > ul li{
+    background-color: var(--white);
+}
+#rightCol section > div > ul li:nth-child(even){
+  background-color: var(--twhite);
+}
+#rightCol section > div > ul li a{
+    padding: 6px 5px;   
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--black);
+}
+#rightCol section > div > ul li a:hover{
+    background-color: var(--shaded-red);
+}
+#rightCol section > div > ul li span{
+  background-color: var(--red);
+  color: var(--white);
+  width: 19px;
+  height: 19px;
+  text-align: center;
+  border-radius: 50px;
+} 
+#rightCol section > div > ul{
+    list-style-type: none;
+    margin: 15px 0;
+    padding: 0;
+    border-radius: 10px;
+}
+/* ************Categorie************ */
+/* *********************************END SHARE ELEMENT*************************/
+
+/* **********************************Index.html***************************** */
+#pageContent.box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#pageContent.box #boxContain{
+    background-color: var(--twhite);
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    padding-top: 150px;
+    flex-flow: column nowrap;
+}
+#pageContent.box #boxContain h1{
+    font-family: Cantarell, Arial, sans-serif;
+    color: var(--red);
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+#pageContent.box #boxContain p{
+     font-size: 0.8em;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+/* **********************************END Index.html************************* */
+
+/* **********************************Galleries.html************************* */
+
+/* *******************************END Galleries.html************************ */
+
+/* *******************************Contact.html************************ */
+#pageContent form{
+    border-top: solid 1px var(--red);
+    display: grid;
+}
+#pageContent form > div > div{
+     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+#pageContent form div div label{
+   margin-bottom: 5px;
+   font-size: 1.1em;
+}
+#pageContent form div div input{
+    margin-top: 3px;
+ }
+ #pageContent form div div textarea{
+   height: 150px;
+   margin-top: 6px;
+   resize: none;
+ }
+ #pageContent form div div.area{
+    margin-top: 16px;
+ }
+ #pageContent form button{
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    padding: 10px 0;
+    margin-top: 30px;
+ }
+ #pageContent form button:hover{
+    background-color: var(--shaded-red);
+ }
+/* *******************************END Contact.html************************ */
+
+/* *********************************Blog.html**************************** */
+ #leftCol article:nth-child(odd){
+    background-color: var(--shaded-red);
+    padding: 5px 20px 25px 20px;
+}
+#leftCol article:nth-child(even){
+    background-color: var(--white);
+    padding: 5px 20px 25px 20px;
+}
+#leftCol article h3{
+    color: var(--green);
+    font-size: 1.3em;
+}
+#leftCol article a{
+    color: var(--red);
+}
+#leftCol article a:hover{
+   text-decoration: underline;
+}
+#leftCol article > a{
+    text-decoration: none;
+}
+#leftCol article span{
+    font-style: italic;
+    font-size: 00.8em;
+}
+hr{
+    margin: 25px 0;
+    /* border-color: black; */
+    border: solid 0.1px black;
+}
+/* *******************************END Blog.html************************** */
+
+/* *****************************SingleBlog.html************************** */
+.imgBlog{
+    max-width: 100%;
+    height: auto;
+}
+#pageContent.blog #leftCol dl{
+    border: solid 1px black;
+    padding: 20px;
+    border-radius: 10px;
+}
+#pageContent.blog #leftCol dl dt{
+    font-size: 1.2em;
+    padding: 10px 0;
+    font-weight: bolder;
+}
+/* ***************************END SingleBlog.html************************* */
+
+
+/* Media Query */
+@media screen and (min-width: 768px) {
+    #menuToggle{
+        display: none;
+    }
+    #mainHeader{
+        grid-template-columns: 80px 250px 1fr; 
+    }
+    #mainHeader > h3 {
+        font-size: 1.3em;
+    }
+    #mainHeader #mainNav{
+        display: block !important;
+         position: static;
+        background-color: transparent; 
+        
+    }
+    #mainHeader #mainNav ul {
+        flex-direction: row; 
+        align-items: center;
+        height: 40px;
+        justify-content: flex-end;
+    }
+    #mainHeader #mainNav ul li a    {
+        font-size: 1.2em;
+        padding: 0 10px;
+    }
+    #pageContent.box{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    #pageContent main ul{
+       grid-template-columns: repeat(3,1fr);
+    }
+    #pageContent.blog .imgBlog{
+        max-width: 46%;
+        height: auto;
+        float: left;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #mainHeader{
+        grid-template-columns: 80px repeat(2, 1fr); 
+    }
+    #pageContent main ul{
+        grid-template-columns: repeat(4,1fr);
+     }
+     #pageContent form{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    #pageContent form button{
+        grid-column: span 2;
+    }
+    #pageContent.blog{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #pageContent.blog{
+        grid-template-columns: 3fr 1fr;
+    }
+}
